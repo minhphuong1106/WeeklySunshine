@@ -6,9 +6,7 @@ import java.util.List;
 public class WeatherBusiness {
     public List<WeatherModel> InitDummyData(){
         WeatherModel sun = new WeatherModel(MyConstants.AreaName, "Sunday Mar 21",
-                MyConstants.WeatherStyles.Clear,
-                21,
-                11, MyConstants.DisplayStyles.Today);
+                MyConstants.WeatherStyles.Clear,21, 11, MyConstants.DisplayStyles.Today);
         WeatherModel mon = new WeatherModel(MyConstants.AreaName, "Tomorrow",
                 MyConstants.WeatherStyles.Clouds, 22, 12, MyConstants.DisplayStyles.AnotherDay);
         WeatherModel tue = new WeatherModel(MyConstants.AreaName, "Tuesday",
