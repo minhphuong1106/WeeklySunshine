@@ -1,5 +1,4 @@
 package com.example.weeklysunshine;
-
 import java.io.Serializable;
 
 public class WeatherModel implements Serializable {
