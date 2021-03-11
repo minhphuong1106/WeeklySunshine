@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/TodayLayoutStyles">
+
+    <TextView
+        android:id="@+id/tvDayName"
+        style="@style/TodayDayNameStyles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Today" />
+
+    <TextView
+        android:id="@+id/tvMaxDegree"
+        style="@style/TodayMaxDegreeStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvDayName"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Max Degree" />
+
+    <TextView
+        android:id="@+id/tvMinDegree"
+        style="@style/TodayMinDegreeStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvDayName"
+        app:layout_constraintLeft_toRightOf="@id/tvMaxDegree"
+        app:layout_constraintBottom_toBottomOf="@id/tvMaxDegree"
+        tools:text="Min Degree" />
+
+    <ImageView
+        android:id="@+id/ivThumb"
+        android:src="@drawable/art_clear"
+        style="@style/TodayThumbStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvDayName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        style="@style/TodayAreaStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvMaxDegree"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Ha Noi" />
+
+    <TextView
+        android:id="@+id/tvWeatherStatus"
+        style="@style/TodayWeatherStatusStyles"
+        app:layout_constraintTop_toBottomOf="@id/ivThumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Weather Status" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

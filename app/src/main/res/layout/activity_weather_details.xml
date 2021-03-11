@@ -1,0 +1,71 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DetailsLayoutStyles">
+
+    <TextView
+        android:id="@+id/tvDayName"
+        style="@style/DetailsDayNameStyles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Today" />
+
+    <TextView
+        android:id="@+id/tvMaxDegree"
+        style="@style/DetailsMaxDegreeStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvDayName"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Max Degree" />
+
+    <TextView
+        android:id="@+id/tvMinDegree"
+        style="@style/DetailsMinDegreeStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvMaxDegree"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Min Degree" />
+
+    <ImageView
+        android:id="@+id/ivThumb"
+        android:src="@drawable/art_clear"
+        style="@style/DetailsThumbStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvDayName"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvWeatherStatus"
+        style="@style/DetailsWeatherStatusStyles"
+        app:layout_constraintTop_toBottomOf="@id/ivThumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Weather Status" />
+
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_marginTop="60dp"
+        style="@style/DetailsExtendInfoStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvMinDegree"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Humidity" />
+
+    <TextView
+        android:id="@+id/tvPressure"
+        style="@style/DetailsExtendInfoStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvHumidity"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Pressure" />
+
+    <TextView
+        android:id="@+id/tvWind"
+        style="@style/DetailsExtendInfoStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvPressure"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Wind" />
+
+    <TextView
+        android:id="@+id/tvArea"
+        style="@style/DetailsExtendInfoStyles"
+        app:layout_constraintTop_toBottomOf="@id/tvWind"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Area" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
