@@ -58,7 +58,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<ViewHolder> {
         tvMinDegree.setText(Integer.toString(item.getMinDegree()));
 
         TextView tvWeatherStatus = view.findViewById(R.id.tvWeatherStatus);
-        tvMinDegree.setText(item.getWeatherStatus());
+        tvWeatherStatus.setText(item.getWeatherStatus());
 
         ImageView ivThumb = view.findViewById(R.id.ivThumb);
         if (item.getDisplayStyle() == MyConstants.DisplayStyles.Today)

@@ -32,7 +32,7 @@ public class WeatherDetailsActivity extends AppCompatActivity {
         tvMinDegree.setText(Integer.toString(model.getMinDegree()));
 
         TextView tvWeatherStatus = findViewById(R.id.tvWeatherStatus);
-        tvMinDegree.setText(model.getWeatherStatus());
+        tvWeatherStatus.setText(model.getWeatherStatus());
 
         ImageView ivThumb = findViewById(R.id.ivThumb);
         ivThumb.setImageResource(model.getArtThumb());
