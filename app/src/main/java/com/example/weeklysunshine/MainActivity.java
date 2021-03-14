@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData(){
         business = new WeatherBusiness();
-        model = business.InitDummyData();
+        model = business.GetData();
         adapter = new WeatherAdapter(model, new IOnItemClick() {
             @Override
             public void onClick(int index) {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         WeatherModel weatherModel = model.get(index);
         Intent intent = new Intent(this, WeatherDetailsActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable(MyConstants.Keys.ModelDetailsKey, weatherModel);
+        bundle.putSerializable(ProjectConstants.Keys.ModelDetailsKey, weatherModel);
         intent.putExtras(bundle);
         startActivity(intent);
     }

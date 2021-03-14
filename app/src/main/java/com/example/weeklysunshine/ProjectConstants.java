@@ -1,6 +1,6 @@
 package com.example.weeklysunshine;
 
-public class MyConstants {
+public class ProjectConstants {
     public static final String AreaName = "Ha Noi";
 
     public static class WeatherStyles{

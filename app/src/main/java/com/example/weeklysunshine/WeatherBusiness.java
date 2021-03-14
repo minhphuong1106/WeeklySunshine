@@ -4,21 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WeatherBusiness {
-    public List<WeatherModel> InitDummyData(){
-        WeatherModel sun = new WeatherModel(MyConstants.AreaName, "Sunday Mar 21",
-                MyConstants.WeatherStyles.Clear,21, 11, MyConstants.DisplayStyles.Today);
-        WeatherModel mon = new WeatherModel(MyConstants.AreaName, "Tomorrow",
-                MyConstants.WeatherStyles.Clouds, 22, 12, MyConstants.DisplayStyles.AnotherDay);
-        WeatherModel tue = new WeatherModel(MyConstants.AreaName, "Tuesday",
-                MyConstants.WeatherStyles.Fog, 23, 13, MyConstants.DisplayStyles.AnotherDay);
-        WeatherModel wed = new WeatherModel(MyConstants.AreaName, "Wednesday",
-                MyConstants.WeatherStyles.LightClouds, 24, 14, MyConstants.DisplayStyles.AnotherDay);
-        WeatherModel thu = new WeatherModel(MyConstants.AreaName, "Thursday",
-                MyConstants.WeatherStyles.LightRain, 25, 15, MyConstants.DisplayStyles.AnotherDay);
-        WeatherModel fri = new WeatherModel(MyConstants.AreaName, "Friday",
-                MyConstants.WeatherStyles.Rain, 26, 16, MyConstants.DisplayStyles.AnotherDay);
-        WeatherModel sat = new WeatherModel(MyConstants.AreaName, "Saturday",
-                MyConstants.WeatherStyles.Snow, 27, 17, MyConstants.DisplayStyles.AnotherDay);
+    public List<WeatherModel> GetData(){
+        List<WeatherModel> result = InitDummyData();
+        return result;
+    }
+
+    private List<WeatherModel> InitDummyData(){
+        WeatherModel sun = new WeatherModel(ProjectConstants.AreaName, "Sunday Mar 21",
+                ProjectConstants.WeatherStyles.Clear,21, 11, ProjectConstants.DisplayStyles.Today);
+        WeatherModel mon = new WeatherModel(ProjectConstants.AreaName, "Tomorrow",
+                ProjectConstants.WeatherStyles.Clouds, 22, 12, ProjectConstants.DisplayStyles.AnotherDay);
+        WeatherModel tue = new WeatherModel(ProjectConstants.AreaName, "Tuesday",
+                ProjectConstants.WeatherStyles.Fog, 23, 13, ProjectConstants.DisplayStyles.AnotherDay);
+        WeatherModel wed = new WeatherModel(ProjectConstants.AreaName, "Wednesday",
+                ProjectConstants.WeatherStyles.LightClouds, 24, 14, ProjectConstants.DisplayStyles.AnotherDay);
+        WeatherModel thu = new WeatherModel(ProjectConstants.AreaName, "Thursday",
+                ProjectConstants.WeatherStyles.LightRain, 25, 15, ProjectConstants.DisplayStyles.AnotherDay);
+        WeatherModel fri = new WeatherModel(ProjectConstants.AreaName, "Friday",
+                ProjectConstants.WeatherStyles.Rain, 26, 16, ProjectConstants.DisplayStyles.AnotherDay);
+        WeatherModel sat = new WeatherModel(ProjectConstants.AreaName, "Saturday",
+                ProjectConstants.WeatherStyles.Snow, 27, 17, ProjectConstants.DisplayStyles.AnotherDay);
 
         List<WeatherModel> result = new ArrayList<>();
         result.add(sun);

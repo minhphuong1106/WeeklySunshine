@@ -27,7 +27,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        int itemLayoutId = (viewType == MyConstants.DisplayStyles.Today)
+        int itemLayoutId = (viewType == ProjectConstants.DisplayStyles.Today)
                 ? R.layout.today_item
                 : R.layout.another_day_item;
         View view = layoutInflater.inflate(itemLayoutId, parent, false);
@@ -61,13 +61,11 @@ public class WeatherAdapter extends RecyclerView.Adapter<ViewHolder> {
         tvWeatherStatus.setText(item.getWeatherStatus());
 
         ImageView ivThumb = view.findViewById(R.id.ivThumb);
-        if (item.getDisplayStyle() == MyConstants.DisplayStyles.Today)
-        {
+        if (item.getDisplayStyle() == ProjectConstants.DisplayStyles.Today){
             ivThumb.setImageResource(item.getArtThumb());
             TextView tvArea =  view.findViewById(R.id.tvArea);
             tvArea.setText(item.getAreaName());
-        }
-        else{
+        }else{
             ivThumb.setImageResource(item.getIcThumb());
         }
 

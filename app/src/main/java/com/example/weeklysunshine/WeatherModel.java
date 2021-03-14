@@ -98,41 +98,37 @@ public class WeatherModel implements Serializable {
 
     public void setThumbs() {
         switch (weatherStatus) {
-            case MyConstants.WeatherStyles.Clear:
+            case ProjectConstants.WeatherStyles.Clear:
                 artThumb = R.drawable.art_clear;
                 icThumb = R.drawable.ic_clear;
                 break;
-            case MyConstants.WeatherStyles.Clouds:
+            case ProjectConstants.WeatherStyles.Clouds:
                 artThumb = R.drawable.art_clouds;
                 icThumb = R.drawable.ic_cloudy;
                 break;
-            case MyConstants.WeatherStyles.Fog:
+            case ProjectConstants.WeatherStyles.Fog:
                 artThumb = R.drawable.art_fog;
                 icThumb = R.drawable.ic_fog;
                 break;
-            case MyConstants.WeatherStyles.LightClouds:
+            case ProjectConstants.WeatherStyles.LightClouds:
                 artThumb = R.drawable.art_light_clouds;
                 icThumb = R.drawable.ic_light_clouds;
                 break;
-            case MyConstants.WeatherStyles.LightRain:
+            case ProjectConstants.WeatherStyles.LightRain:
                 artThumb = R.drawable.art_light_rain;
                 icThumb = R.drawable.ic_light_rain;
                 break;
-            case MyConstants.WeatherStyles.Rain:
+            case ProjectConstants.WeatherStyles.Rain:
                 artThumb = R.drawable.art_rain;
                 icThumb = R.drawable.ic_rain;
                 break;
-            case MyConstants.WeatherStyles.Snow:
+            case ProjectConstants.WeatherStyles.Snow:
                 artThumb = R.drawable.art_snow;
                 icThumb = R.drawable.ic_snow;
                 break;
-            case MyConstants.WeatherStyles.Storm:
+            default: //ProjectConstants.WeatherStyles.Storm:
                 artThumb = R.drawable.art_storm;
                 icThumb = R.drawable.ic_storm;
-                break;
-            default:
-                artThumb = 0;
-                icThumb = 0;
         }
     }
 

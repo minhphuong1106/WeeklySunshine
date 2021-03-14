@@ -18,7 +18,7 @@ public class WeatherDetailsActivity extends AppCompatActivity {
 
     private void getModel(){
         Intent intent = getIntent();
-        model = (WeatherModel) intent.getExtras().getSerializable(MyConstants.Keys.ModelDetailsKey);
+        model = (WeatherModel) intent.getExtras().getSerializable(ProjectConstants.Keys.ModelDetailsKey);
     }
 
     private void setDataToView() {
